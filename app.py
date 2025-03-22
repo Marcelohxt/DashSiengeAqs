@@ -1,6 +1,6 @@
 import dash
-import dash_core_components as dcc
-import dash_html_components as html
+from dash import dcc
+from dash import html
 import pandas as pd
 import plotly.express as px
 
@@ -11,7 +11,7 @@ df = pd.read_csv('dados/df_agrupado.csv')  # Substitua 'seu_arquivo.csv' pelo ca
 app = dash.Dash(__name__)
 
 # Criar gráfico (exemplo com gráfico de dispersão)
-fig = px.scatter(df, x='Coluna_X', y='Coluna_Y', title="Exemplo de Gráfico", color='Coluna_Cor')
+fig = px.scatter(df, x='Gestor_Responsavel', y='Valor_final_negociado_formatado', title="Exemplo de Gráfico", color='Valor_final_Inicial_de_Cotacao_formatado')
 
 # Definir o layout do aplicativo Dash
 app.layout = html.Div([
@@ -21,4 +21,4 @@ app.layout = html.Div([
 
 # Rodar o servidor local
 if __name__ == '__main__':
-    app.run_server(debug=True)
+    app.run(debug=True)
