@@ -36,7 +36,10 @@ fig = px.scatter(df, x='Gestor_Responsavel', y='Valor_final_negociado_formatado'
 app.layout = html.Div([
     html.H1("Dash Board Suprimentos Liliane Amanda", style={'text-align': 'center'}),
     dcc.Graph(figure=fig)
-    from django.conf import settings
+
+
+# levandanto dados em tempo real 
+
 
 ])
 
