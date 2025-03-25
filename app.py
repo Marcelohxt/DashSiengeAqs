@@ -60,7 +60,15 @@ app.layout = dbc.Container(
                 dbc.Col(dbc.Card(dbc.CardBody([dcc.Graph(figure=fig3)])), width=6),
                 dbc.Col(dbc.Card(dbc.CardBody([dcc.Graph(figure=fig4)])), width=6)
             ]
-        )
+        ),
+
+        dbc.Row(
+            [
+                dbc.Col(dbc.Card(dbc.CardBody([dcc.Graph(figure=fig3)])), width=6),
+                dbc.Col(dbc.Card(dbc.CardBody([dcc.Graph(figure=fig4)])), width=6)
+            ]
+        ),
+        
     ],
     fluid=True
 )
