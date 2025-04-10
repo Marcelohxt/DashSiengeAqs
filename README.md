@@ -1,5 +1,14 @@
-Esse é um dataSet que iremos trabalhar para uma empresa do seguimento da COnstrução Civil, em breve teremos mais informações!
+# Construction Industry Dashboard
 
-![image](https://github.com/user-attachments/assets/e66d39e2-5b65-4607-b65b-9b95406460d7)
- 
-This Project have a file requirements.txt, with all settings! This File can be to use for load  packages  the Project!
+Esse é um dataset que será utilizado em um projeto voltado para o setor da **Construção Civil**. Em breve teremos mais informações e análises aprofundadas!
+
+> This project is focused on the **Construction Industry**. Soon, more detailed information and insights will be available based on the dataset!
+
+## 📦 Requirements
+
+This project includes a `requirements.txt` file with all the necessary packages to run the application.
+
+To install the dependencies, run:
+
+```bash
+pip install -r requirements.txt
